@@ -20,12 +20,12 @@
                             <h2>
                                 <%=book.BookTitle%>
                             </h2>
-
-                            <% for(let i=0; i < authors.length; i++){ %>
-                                <% if(book.BookTitle === authors[i].title){%>
+                            <h3>Author(s):</h3>
+                            <% for(let i=0; i < joined.length; i++){ %>
+                                <% if(book.BookTitle === joined[i].title){%>
                                     <h4>
-                                        <%=authors[i].first_name%>
-                                            <%=authors[i].last_name%>
+                                        <%=joined[i].first_name%>
+                                            <%=joined[i].last_name%>
                                     </h4>
                                     <%} %>
                                         <%}%>
