@@ -43,7 +43,7 @@ body {
     display: flex;
 }
 
-.book-card-image {
+#book-card-image {
     height: 200px;
     width: 200px;
 }

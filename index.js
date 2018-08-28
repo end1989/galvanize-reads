@@ -36,7 +36,7 @@ app.get("/authors", (req, res, next) => {
     queries
         .listAuthors()
         .then(authors => {
-            res.json({ authors });
+            res.render("authors", { authors });
         })
         .catch(next);
 });

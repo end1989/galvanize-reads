@@ -28,27 +28,7 @@ module.exports = {
             });
     },
     listAuthors() {
-        return database("books_authors_table")
-            .join(
-                "books_table",
-                "books_authors_table.book_id",
-                "=",
-                "books_table.id"
-            )
-            .join(
-                "authors_table",
-                "books_authors_table.author_id",
-                "=",
-                "authors_table.id"
-            )
-            .select({
-                book_id: "books_table.id",
-                title: "books_table.BookTitle",
-                first_name: "authors_table.FirstName",
-                last_name: "authors_table.LastName",
-                genre: "books_table.BookGenre",
-                cover_url: "books_table.BookCoverURL"
-            });
+        return database("authors_table").select();
     }
 };
 //     read(id) {
