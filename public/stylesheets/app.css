@@ -1,5 +1,6 @@
 body {
     margin: 30px 100px;
+    background-color: rgb(206, 206, 206);
 }
 
 .header {
@@ -20,11 +21,40 @@ body {
     justify-content: space-around;
 }
 .box {
-    border: black solid 5px;
+    border: black solid 4px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
+    padding-bottom: 10px;
 }
 /* body {
     background-color: blue;
 } */
+
+.book-info {
+    display: flex;
+    border: solid black 1px;
+    flex-flow: column wrap;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.book-card {
+    display: flex;
+}
+
+.book-card-image {
+    height: 200px;
+    width: 200px;
+}
+
+.book-image {
+    display: flex;
+    border: solid black 1px;
+
+    justify-content: center;
+    align-items: center;
+}
+h4 {
+    margin: 0px;
+}

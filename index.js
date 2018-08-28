@@ -21,8 +21,22 @@ app.get("/", (req, res) => {
 app.get("/books", (req, res, next) => {
     queries
         .listBooks()
-        .then(books => {
-            res.json({ books });
+        .then(authors_books => {
+            let authors = queries.listBooksAuthors();
+            console.log({ authors });
+
+            res.render("books", {
+                authors_books: authors_books,
+                authors: authors
+            });
+        })
+        .catch(next);
+});
+app.get("/authors", (req, res, next) => {
+    queries
+        .listAuthors()
+        .then(authors => {
+            res.json({ authors });
         })
         .catch(next);
 });
