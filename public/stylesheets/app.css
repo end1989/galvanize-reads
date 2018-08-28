@@ -1,5 +1,5 @@
 body {
-    margin: 30px 100px;
+    margin: 30px 160px;
     background-color: rgb(206, 206, 206);
 }
 
@@ -21,11 +21,12 @@ body {
     justify-content: space-around;
 }
 .box {
-    border: black solid 4px;
+    border: black solid 2px;
     text-align: center;
     font-size: 25px;
     color: black;
     padding-bottom: 10px;
+    box-shadow: 6px 6px 4px grey;
 }
 /* body {
     background-color: blue;
@@ -37,10 +38,13 @@ body {
     flex-flow: column wrap;
     padding-left: 20px;
     padding-right: 50px;
+    width: 100%;
 }
 
 .book-card {
     display: flex;
+    margin: 8px;
+    box-shadow: 4px 4px 3px grey;
 }
 
 #book-card-image {
@@ -67,4 +71,5 @@ h4 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    box-shadow: 4px 4px 3px grey;
 }

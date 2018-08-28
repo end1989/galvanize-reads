@@ -6,12 +6,15 @@
     <br>
     <div>
         <div class="ui huge header">List of Authors!</div>
+        <h4>Total Authors:
+            <%= authors.length%>
+        </h4>
         <div>
             <div>
                 <% authors.forEach(function(author){ %>
                     <div class="book-card">
                         <div class="book-image">
-                            <img id="book-card-image" class="" ; src='<%= author.PortraitURL %>'>
+                            <img id="book-card-image" class="" src='<%= author.PortraitURL %>'>
                         </div>
                         <div class="book-info">
                             <h2>
